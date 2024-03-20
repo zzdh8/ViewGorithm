@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col min-h-[100dvh]">
-    <div class=" bg-back-color text-white pb-14">
+    <div class="bg-back-color text-white pb-14">
       <header class="px-4 lg:px-6 h-14 flex items-center">
         <button
           class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 flex items-center justify-center">
