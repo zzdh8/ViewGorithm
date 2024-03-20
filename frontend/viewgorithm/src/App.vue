@@ -24,11 +24,32 @@
         <p class="text-lg mt-4">You Can Wath to Visualize ALGORITHMS.</p>
       </div>
     </div>
-    <main class="flex-1 flex flex-col items-center justify-center">
-
+    <div class="flex flex-row mb-5 mt-14 bg-white pt-10 pb-10">
+      <div class="header-under text-4xl font-bold">
+        Welcome to ViewGorithm!
+      </div>
+      <div class="vertical-line mx-4"></div>
+      <div class="header-under font-mono">
+        If You Want to Watch to Visualize Algorithms, You Should Use This Web Service.
+        We provide you with a better understanding.
+        Please Push The Button that You want to Understand More.
+      </div>
+    </div>
+    <main class="flex-1 flex flex-col items-center justify-center bg-section-color">
+      <section class="flex flex-col flex-nowrap">
+        <h1 class="list-title">Algorithm List</h1>
+        <div>
+          Push The Button that You want to Understand More.
+        </div>
+        <div class="list-wrap flex flex-row flex-wrap gap-4">
+          <div class="lists" v-for="name in algorithms" :key="name">
+            {{ name }}
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-
+    <footer class="flex flex-col gap-2 sm:flex-row py-2 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <span class=" text-sm font-bold">SungKongHoe University Team ViewGorithm</span>
     </footer>
   </div>
 </template>
@@ -39,7 +60,7 @@ export default {
   name: 'App',
   data() {
     return {
-      algorithm: ['Bubble sort', 'Merge Sort', 'Quick Sort']
+      algorithms: ['Bubble sort', 'Merge Sort', 'Quick Sort']
     }
   },
   components: {
@@ -53,15 +74,55 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  color: black;
 }
 
-.al-menu {
-  padding: 10px;
+/* header 아래 태그 영역 */
+.header-under {
+  flex-flow: row wrap;
+  flex-basis: 50%;
+  align-items: center;
+  justify-items: center;
+
 }
 
-#main-title {
-  width: auto;
-  height: 50px;
-  flex-wrap: wrap;
+/* main 태그 영역 */
+.vertical-line {
+  border-left: 2px dashed #333;
+  height: auto;
+}
+
+.list-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.list-wrap {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 3px solid #333;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 10rem;
+  height: 12rem;
+  margin: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-content: flex-end;
 }
 </style>

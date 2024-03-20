@@ -6,9 +6,13 @@ module.exports = {
 ],
   theme: {
     extend: {
+      fontFamily: {
+        'oswald': ['Oswald', 'sans-serif'],
+      },
       colors: {
         'custom-color': '#22333B',
         'back-color': '#2c3e50',
+        'section-color': '#daf4eb',
       },
     },
   },
