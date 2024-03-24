@@ -1,28 +1,23 @@
 <template>
   <div>
-    <div class="bg-back-color text-white pb-1">
-      <header class="px-4 lg:px-6 h-12 flex items-center">
-        <button
-          class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 flex items-center justify-center">
+    <div class="bg-back-color text-white pb-1 h-20">
+      <header class="px-4 lg:px-6 h-20 flex items-center pt-4 pb-2">
+        <button class="whitespace-nowrap rounded-3xl text-lg px-2 py-1 flex items-center justify-center">
           <RouterLink to="/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-            <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
-          </svg>
-          <span class="sr-only">Home</span>
+            <img src="../public/viewLOGO.ico" alt="Logo" class="logoImg">
+            <span class="sr-only">Home</span>
           </RouterLink>
         </button>
         <button
-          class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 ml-auto">
+          class="inline-flex items-center justify-center font-bold whitespace-nowrap text-lg h-10 px-4 py-2 ml-auto">
           <RouterLink to="/login">Login</RouterLink>
         </button>
-        <button
-          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+        <button class="inline-flex items-center justify-center font-bold whitespace-nowrap text-lg h-10 px-4 py-2">
           <RouterLink to="/join">Join</RouterLink>
         </button>
       </header>
     </div>
-    <RouterView/>
+    <RouterView />
   </div>
 </template>
 
@@ -39,4 +34,40 @@ import { RouterLink } from 'vue-router';
   text-align: center;
   color: black;
 }
+
+/* Header 자식 요소 버튼 css*/
+.logoImg{
+    width: 70px;
+    height: 70px;
+}
+
+header button:nth-child(1) {
+    transition: all 0.3s ease;
+    padding-bottom: 10px;
+}
+header button:nth-child(1):hover {
+    background-color: #dae2d6; /* 마우스를 올렸을 때의 버튼 색 */
+    transform: scale(1.1); /* 마우스를 올렸을 때의 버튼 크기 */
+}
+
+/* 두 번째, 세 번째 버튼에 대한 CSS */
+header button:nth-child(2),
+header button:nth-child(3) {
+  border: #2c3e50;
+  border-radius: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+header button:nth-child(2):hover,
+header button:nth-child(3):hover {
+    border-radius: 1.5rem;
+    background-color: #dae2d6; /* 마우스를 올렸을 때의 버튼 색 */
+    transform: scale(1.1); /* 마우스를 올렸을 때의 버튼 크기 */
+}
+
+header button:nth-child(2):active,
+header button:nth-child(3):active {
+    color: #daf4eb; /* 버튼을 클릭했을 때의 글자색 */
+}
+
 </style>
