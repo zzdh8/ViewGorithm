@@ -2,7 +2,7 @@
     <div class="all flex flex-col min-h-[100dvh]">
         <div class="flex-wrap bg-back-color text-white">
             <h1 class="text-6xl font-bold">ViewGorithm</h1>
-            <p class="text-lg mt-4">You Can VIEW a Process of ALGORITHMS.</p>
+            <p class="text-lg mt-4 pb-4">You Can VIEW The Process of ALGORITHMS.</p>
         </div>
         <div class="flex flex-row mb-5 mt-14 bg-white pt-10 pb-10">
             <div class="header-under text-4xl font-bold">
@@ -10,16 +10,16 @@
             </div>
             <div class="vertical-line ml-2 mr-1"></div>
             <div class="header-under font-mono mr-2 ml-1">
-                If You Want to Watch to Visualize Algorithms, You Should Use This Web Service.
-                We provide you with a better understanding.
-                Please Push The Button that You want to Understand More.
+                ViewGorithm provides a useful service for everyone who want to check the process of an algorithm.
+                With ViewGorithm, you can check the process of an algorithm with the animation.
+                Choose the algorithm you want check.
             </div>
         </div>
         <main class="flex-1 flex flex-col items-center justify-center bg-section-color">
             <section class="flex flex-col flex-nowrap">
                 <h1 class="list-title">Algorithm List</h1>
                 <div>
-                    Push The Button that You want to Understand More.
+                    Click the button down below and have an opportunity to check the process of an algorithm.
                 </div>
                 <div class="list-wrap flex flex-row flex-wrap gap-4">
                     <div class="lists" v-for="name in algorithms" :key="name"
