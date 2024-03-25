@@ -1,10 +1,8 @@
-package algorithms;
+package vigo.com.viewgorithm.algorithms.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 @Getter
 @Entity
@@ -26,6 +24,9 @@ public class Algorithm_codes {
     @Column(name = "java_code", columnDefinition = "TEXT")
     private String java_code;
 
+
+    // 1:1 관계 표시
+    // 알고리즘 이름으로 조인하는거다.
     @OneToOne
     @JoinColumn(name = "algorithm_name")
     private Algorithm_Category codes;

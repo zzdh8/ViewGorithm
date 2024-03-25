@@ -1,4 +1,4 @@
-package algorithms;
+package vigo.com.viewgorithm.algorithms.domain;
 
 
 import jakarta.persistence.Column;
