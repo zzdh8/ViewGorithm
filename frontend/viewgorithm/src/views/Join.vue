@@ -56,7 +56,6 @@
   </script>
   
   <style scoped>
-  /* 기존 스타일 코드 */
   .signup-container {
     display: flex;
     flex-direction: column;
@@ -132,7 +131,6 @@
     color: #555;
   }
   
-  /* 새로운 스타일 코드 */
   .gender-input {
     display: flex;
     justify-content: center;
