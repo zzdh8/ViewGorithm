@@ -58,13 +58,11 @@
   <style scoped>
   /* 기존 스타일 코드 */
   .signup-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 95vh;
     background-color: #f0f0f0;
   }
   
