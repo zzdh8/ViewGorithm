@@ -21,7 +21,7 @@
         <input type="email" placeholder="Email" v-model="email" />
         <button @click="signup">Sign Up</button>
       </div>
-      <p class="login-link">Already have an account? <router-link to="/join">Login</router-link></p>
+      <p class="login-link">Already have an account? <router-link to="/login">Login</router-link></p>
     </div>
   </template>
   
