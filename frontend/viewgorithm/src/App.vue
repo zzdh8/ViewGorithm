@@ -22,7 +22,6 @@
 </template>
 
 <script setup>
-import MainPage from './views/MainPage.vue';
 import { RouterLink } from 'vue-router';
 </script>
 
