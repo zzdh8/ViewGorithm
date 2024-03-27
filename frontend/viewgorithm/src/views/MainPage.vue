@@ -29,17 +29,19 @@
                 </div>
             </section>
         </main>
+        <main class="bg-main-color">
+            <Posts />
+        </main>
         <footer class="flex flex-col gap-2 sm:flex-row py-2 w-full shrink-0 items-center px-4 md:px-6 border-t">
-            <span class=" text-sm font-bold">SungKongHoe University Team ViewGorithm</span>
+            <span class=" text-sm font-bold">ViewGorithm</span>
         </footer>
     </div>
     <Algorithm v-if="showModal" :data="selectedData" @close-modal="closeModal" class="modal-overlay" />
 </template>
-<script setup>
-import { RouterLink } from 'vue-router';
-</script>
+
 <script>
-import Algorithm from '../components/Algorithm.vue'
+import Algorithm from '../components/Algorithm.vue';
+import Posts from '../components/Posts.vue';
 export default {
     name: 'MainPage',
     data() {
@@ -50,7 +52,8 @@ export default {
         }
     },
     components: {
-        Algorithm
+        Algorithm,
+        Posts
     },
     methods: {
         sendDataTo(name) {
