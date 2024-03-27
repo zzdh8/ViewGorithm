@@ -13,6 +13,7 @@ export default {
         'custom-color': '#22333B',
         'back-color': '#2c3e50',
         'section-color': '#daf4eb',
+        'main-color': '#c8fae6',
       },
     },
   },
