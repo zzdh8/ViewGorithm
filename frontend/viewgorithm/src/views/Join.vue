@@ -21,7 +21,7 @@
         <input type="email" placeholder="Email" v-model="email" />
         <button @click="signup">Sign Up</button>
       </div>
-      <p class="login-link">Already have an account? <router-link to="/join">Login</router-link></p>
+      <p class="login-link">Already have an account? <router-link to="/login">Login</router-link></p>
     </div>
   </template>
   
@@ -56,15 +56,12 @@
   </script>
   
   <style scoped>
-  /* 기존 스타일 코드 */
   .signup-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 95vh;
     background-color: #f0f0f0;
   }
   
@@ -134,7 +131,6 @@
     color: #555;
   }
   
-  /* 새로운 스타일 코드 */
   .gender-input {
     display: flex;
     justify-content: center;
